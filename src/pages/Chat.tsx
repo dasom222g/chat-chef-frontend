@@ -60,16 +60,16 @@ const Chat: FC<ChatProps> = ({ ingredientList, endpoint }): JSX.Element => {
 
       // 데이터가 잘 들어온 경우만 실행
       if (!result.data) return
-      const removeLastDataList = result.data.filter(
-        (_: MessageType, index: number, arr: MessageType[]) => index !== arr.length - 1,
-      )
-      console.log('🚀 ~ sendInfo ~ removeLastDataList:', removeLastDataList)
-      setInfoMessages(removeLastDataList)
+      // const removeLastDataList = result.data.filter(
+      //   (_: MessageType, index: number, arr: MessageType[]) => index !== arr.length - 1,
+      // )
+      // console.log('🚀 ~ sendInfo ~ removeLastDataList:', removeLastDataList)
+      setInfoMessages(result.data)
 
       // 마지막 요소인 assistant값 저장
-      const { role, content } = result.data[result.data.length - 1]
+      // const { role, content } = result.data[result.data.length - 1]
 
-      setMessages((prev) => [...prev, { role, content }])
+      // setMessages((prev) => [...prev, { role, content }])
     } catch (error) {
       console.error(error)
     }

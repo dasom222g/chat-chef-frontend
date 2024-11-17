@@ -8,6 +8,7 @@ import { IngredientType } from './lib/types'
 const App = (): JSX.Element => {
   // logic
   const endpoint = process.env.REACT_APP_SERVER_ADDRESS
+  console.log('🚀 ~ App ~ endpoint:', endpoint)
 
   const [ingredientList, setIngredientList] = useState<IngredientType[]>([])
 
