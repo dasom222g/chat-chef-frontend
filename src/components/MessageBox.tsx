@@ -45,7 +45,7 @@ const MessageBox: FC<MessageBoxProps> = ({ messages, name, isLoading }): JSX.Ele
               <div className="pl-3">
                 <span className="text-base font-medium">{name}</span>
                 <div className="pt-3 pl-2">
-                  <span className="inline-block px-4 py-3 text-sm rounded-xl text-left bg-chef-gray-100 rounded-tl-none">
+                  <span className="inline-block px-4 py-3 text-sm rounded-xl text-left bg-chef-gray-100 rounded-tl-none whitespace-pre-wrap">
                     {data.content}
                   </span>
                   {/* <span className="block text-right text-chef-gray-400 text-xs mt-2 px-2">
@@ -65,7 +65,7 @@ const MessageBox: FC<MessageBoxProps> = ({ messages, name, isLoading }): JSX.Ele
           <div className="pl-3">
             <span className="text-base font-medium">{name}</span>
             <div className="pt-3 pl-2">
-              <span className="inline-block px-4 py-3 text-sm rounded-xl text-left bg-chef-gray-100 rounded-tl-none">
+              <span className="inline-block px-4 py-3 text-sm rounded-xl text-left bg-chef-gray-100 rounded-tl-none whitespace-pre-wrap">
                 {/* {data.content} */}
                 <PulseLoader size={5} color="#46A195" />
               </span>

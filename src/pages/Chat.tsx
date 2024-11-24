@@ -63,7 +63,7 @@ const Chat: FC<ChatProps> = ({ ingredientList, endpoint }): JSX.Element => {
       const removeLastDataList = result.data.filter(
         (_: MessageType, index: number, arr: MessageType[]) => index !== arr.length - 1,
       )
-      console.log('🚀 ~ sendInfo ~ removeLastDataList:', removeLastDataList)
+      // console.log('🚀 ~ sendInfo ~ removeLastDataList:', removeLastDataList)
       setInfoMessages(removeLastDataList)
 
       // 마지막 요소인 assistant값 저장
